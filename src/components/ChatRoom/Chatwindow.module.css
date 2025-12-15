@@ -1,0 +1,77 @@
+.chatWindow {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatWindowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.roomInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.roomName {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.roomDescription {
+  color: #888;
+  font-size: 12px;
+}
+
+.roomActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chatContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.messageInput {
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.inputForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputForm :global(.ant-form-item) {
+  flex: 1;
+  margin-bottom: 0 !important;
+}
+
+.inputForm :global(.ant-input) {
+  width: 100%;
+}

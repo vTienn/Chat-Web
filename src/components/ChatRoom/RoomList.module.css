@@ -1,0 +1,16 @@
+
+.customCollapse :global(.ant-collapse-header) {
+  color: white !important;
+}
+
+.roomItem {
+  padding: 8px 0;
+  color: #b8a4ff;
+  cursor: pointer;
+}
+.addRoom{
+  margin-top: 10px;
+  color: white;
+  border: none;
+  background-color: #2D0A3D;
+}
